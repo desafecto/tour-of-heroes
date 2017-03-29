@@ -11,12 +11,13 @@ import { Hero } from './hero';
         <label>name: </label>
         <input [(ngModel)]="heroInput.name" placeholder="name"/>
       </div>
-      <div><label>price: $</label>{{heroInput.price}}</div>
+      <div><label>price: $</label>
+        <input [(ngModel)]="heroInput.price"/>
+      </div>
     </div>
   `
 })
 export class HeroDetailComponent {
-
   @Input()
   heroInput: Hero;
 }
